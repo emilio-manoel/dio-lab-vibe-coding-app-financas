@@ -7,9 +7,10 @@ import {
   Wallet,
 } from 'lucide-react'
 
+
 import type { FormStepProps } from '../components/features/Simulation/FormStep'
 
-export const simulationFormSteps: FormStepProps[] = [
+export const simulationFormSteps = [
   {
     id: 'income',
     icon: PiggyBank,
@@ -17,7 +18,7 @@ export const simulationFormSteps: FormStepProps[] = [
     question:
       'Quanto é depositado na sua conta todo mês (somando todas as fontes)?',
     inputProps: {
-      placeholder: 'ex: 1.800,00',
+      placeholder: 'ex: 1,800,00',
       prefix: 'R$',
       maxLength: 12,
     },
@@ -84,4 +85,9 @@ export const simulationFormSteps: FormStepProps[] = [
       emojiIcon: '✨',
     },
   },
-] 
+] satisfies FormStepProps[]
+
+export type SimulationFormData = Record<
+  (typeof simulationFormSteps)[number]['id'],
+  string
+>
