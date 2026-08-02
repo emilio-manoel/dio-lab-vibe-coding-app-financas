@@ -4,6 +4,7 @@ import type { InputProps } from "../../shared/input";
 import { Button } from "../../shared/Button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState, type SyntheticEvent } from "react";
+import { formatCurrencyMask } from "../../../utils/currency";
 
 export interface FormStepProps {
   id: string;
@@ -31,16 +32,15 @@ export function FormStep({
   submitButtonProps,
   onBack,
   onNext,
-  hideBackButton
+  hideBackButton,
 }: FormStepProps & ActionsButtonsProps) {
-    const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if(!inputValue) return;
+    if (!inputValue) return;
     onNext();
   };
-
 
   return (
     <div className="bg-card rounded-2xl p-6 shadow-[4px_4px_18px_0px_rgba(0,0,0,0.2)] sm:p-8">
@@ -54,19 +54,23 @@ export function FormStep({
         {question}
       </h3>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <Input {...inputProps} value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <Input
+          {...inputProps}
+          value={inputValue}
+          onChange={(e) => setInputValue(inputProps.prefix === 'R$' ? formatCurrencyMask(e.target.value) : e.target.value)}
+        />
         <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
-            {!hideBackButton && (
-          <Button
-            type="button"
-            onClick={onBack}
-            variant="ghost"
-            icon={ArrowLeft}
-            className="order-2 flex-1 justify-center rounded-xl py-3 sm:order-1"
-          >
-            Voltar
-          </Button>
-            )}
+          {!hideBackButton && (
+            <Button
+              type="button"
+              onClick={onBack}
+              variant="ghost"
+              icon={ArrowLeft}
+              className="order-2 flex-1 justify-center rounded-xl py-3 sm:order-1"
+            >
+              Voltar
+            </Button>
+          )}
           <Button
             type="submit"
             variant="primary"
