@@ -3,12 +3,12 @@
   [data-theme='light'] {
     --background: #f8fafc;
     --foreground: #0f1729;
-    --primary: #925cf0;
+    --primary: #0d823a;
     --primary-foreground: #f8fafc;
     --card: #fcfcfe;
     --border: rgba(9, 9, 11, 0.08);
     --muted-primary: rgba(146, 92, 240, 0.5);
-    --muted-foreground: #64749a;
+    --muted-foreground:  #3a9a77;
     --secondary-button: #f1f5f9;
     --input: #fcfcfe;
     --skeleton-base-color: #e1e1f1;
@@ -18,12 +18,12 @@
   [data-theme='dark'] {
     --background: #0f0d16;
     --foreground: #fcfcfe;
-    --primary: #925cf0;
+    --primary: #0d823a;
     --primary-foreground: #fcfcfc;
     --card: #181622;
     --border: rgba(248, 250, 252, 0.4);
     --muted-primary: rgba(146, 92, 240, 0.2);
-    --muted-foreground: #ad9fc8;
+    --muted-foreground: #67e3b6;
     --secondary-button: #27272a;
     --input: #232131;
     --skeleton-base-color: #3e3e42;
