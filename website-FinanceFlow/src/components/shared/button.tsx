@@ -16,7 +16,7 @@ const baseClasses =
 }
 
 
-export function Button({variant, icon:Icon, children, className, ...props}:buttonProps){
+export function Button({variant = 'primary', icon:Icon, children, className, ...props}:buttonProps){
     return(
         <button {...props} className={[baseClasses, variantClasses[variant], className].join(' ')}>
             {Icon && <Icon size={20}/>}
