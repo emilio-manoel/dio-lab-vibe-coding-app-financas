@@ -103,7 +103,7 @@ Essa experiência fortaleceu minha preparação para atuar como **Desenvolvedor 
 
 ### 🌍 Aplicação
 
-> 
+> https://emilio-manoel.github.io/dio-lab-vibe-coding-app-financas/
 
 ---
 

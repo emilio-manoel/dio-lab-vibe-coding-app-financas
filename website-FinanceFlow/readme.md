@@ -73,7 +73,7 @@ Esses conhecimentos contribuíram significativamente para minha evolução como 
 
 ### 🌍 Website
 
-> Adicionar o link da aplicação.
+> https://emilio-manoel.github.io/dio-lab-vibe-coding-app-financas/
 
 ---
 

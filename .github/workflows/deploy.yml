@@ -27,6 +27,8 @@ jobs:
         working-directory: ./website-FinanceFlow
 
       - name: Build
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
         run: |
           yarn build
           cp dist/index.html dist/404.html
