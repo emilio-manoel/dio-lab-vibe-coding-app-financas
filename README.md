@@ -1,5 +1,3 @@
-Perfeito! Agora que entendi toda a história do projeto, acho que esse README conta muito melhor sua evolução como desenvolvedor. Ele mostra que você utilizou a ideia criada no desafio de **Vibe Coding** como base, mas desenvolveu a aplicação por conta própria utilizando React e outras tecnologias modernas.
-
 # 💰 FinanceFlow
 
 ## 📌 Sobre o Projeto
