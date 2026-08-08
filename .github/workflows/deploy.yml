@@ -27,7 +27,9 @@ jobs:
         working-directory: ./website-FinanceFlow
 
       - name: Build
-        run: yarn build
+        run: |
+          yarn build
+          cp dist/index.html dist/404.html
         working-directory: ./website-FinanceFlow
 
       - name: Deploy to GitHub Pages
