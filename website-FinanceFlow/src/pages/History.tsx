@@ -50,7 +50,7 @@ export function History() {
       />
 
       {data.length === 0 ? (
-        <div className="text-center py-12 text-gray-500 border border-dashed border-gray-300 rounded-xl my-6 bg-gray-50">
+        <div className="text-center py-12 text-gray-500 border border-dashed border-gray-300 rounded-xl my-6 bg-gray-50 ">
           <p className="text-lg font-medium text-gray-700">
             Nenhuma simulação encontrada.
           </p>
