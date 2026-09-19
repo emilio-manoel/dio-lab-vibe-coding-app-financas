@@ -53,7 +53,7 @@ export function CardHistory({ data, onDelete }: CardHistoryProps) {
       {/* VERSÃO DESKTOP (MD+) */}
       <div className="hidden md:flex items-center justify-between gap-4 lg:gap-6">
         {/* Ícone + Nome da Meta + Data */}
-        <div className="flex items-center gap-4 min-w-[220px]">
+        <div className="flex items-center gap-4 min-w-55">
           <div className="w-12 h-12 rounded-2xl bg-purple-100/70 text-purple-600 flex items-center justify-center shrink-0">
             <Goal size={22} className="text-purple-600" />
           </div>
